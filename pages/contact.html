@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — The Advantrix</title>
+  <meta name="description" content="Contact The Advantrix to discuss your branding, digital marketing, website or video production project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/contact.js" defer></script>
+</head>
+
+<body>
+  <header class="nav" id="nav">
+    <a class="brand" href="../index.html" aria-label="The Advantrix — home">
+      <img src="../assets/images/site/brand-mark.svg" width="38" height="21" alt="">
+      <span><small>The</small> Advantrix</span></a>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="production.html">Production</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="on" aria-current="page">Contact</a>
+    </nav>
+    <a class="btn red" href="contact.html">Let's talk</a>
+    <button class="menu" id="menu" type="button" aria-label="Menu" aria-controls="links" aria-expanded="false"><svg width="20" height="20"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M4 8h16M4 16h16" />
+      </svg></button>
+  </header>
+
+  <main class="page">
+    <div class="hero contact-hero">
+      <div class="media"><img src="../assets/images/production/sm-film.jpg" alt="Film playing in an empty cinema"></div>
+      <div class="in"><span class="tag">Contact</span>
+        <h1>Ready to take <b>the advantage?</b></h1>
+        <p class="lead">Tell us about your brand and what you need. We'll come back within one working day with ideas
+          and a plan.</p>
+      </div>
+    </div>
+    <div class="band band-tight-top">
+      <div class="wrap split contact-split">
+        <form id="form" class="glass rv" novalidate>
+          <div class="row"><label>Your name<input name="name" required autocomplete="name"></label><label>Company<input
+                name="company" autocomplete="organization"></label></div>
+          <div class="row"><label>Email<input name="email" type="email" required
+                autocomplete="email"></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+          </div>
+          <div><span class="service-pick-label" id="service-pick-label">What do you need?</span>
+            <div class="pick" id="pick" role="group" aria-labelledby="service-pick-label">
+              <input type="checkbox" id="p0" name="svc" value="Logo &amp; brand identity"><label for="p0">Logo &amp; brand identity</label>
+              <input type="checkbox" id="p1" name="svc" value="Video production"><label for="p1">Video production</label>
+              <input type="checkbox" id="p2" name="svc" value="Digital marketing"><label for="p2">Digital marketing</label>
+              <input type="checkbox" id="p3" name="svc" value="Performance marketing"><label for="p3">Performance marketing</label>
+              <input type="checkbox" id="p4" name="svc" value="SEO"><label for="p4">SEO</label>
+              <input type="checkbox" id="p5" name="svc" value="Social media marketing"><label for="p5">Social media marketing</label>
+              <input type="checkbox" id="p6" name="svc" value="AI integration"><label for="p6">AI integration</label>
+              <input type="checkbox" id="p7" name="svc" value="Website development"><label for="p7">Website development</label>
+            </div>
+          </div>
+          <label>Budget<select name="budget">
+              <option>Not sure yet</option>
+              <option>Under ₹50,000</option>
+              <option>₹50,000 – ₹2 lakh</option>
+              <option>₹2 – 5 lakh</option>
+              <option>₹5 lakh+</option>
+            </select></label>
+          <label>Project details<textarea name="msg" placeholder="Your brand, goals and timeline…"></textarea></label>
+          <button class="btn red contact-submit" type="submit" disabled>Send enquiry →</button>
+          <div class="ok" id="ok" role="status"></div>
+        </form>
+        <div class="info rv">
+          <div class="glass"><small>Email</small>hello@theadvantrix.com</div>
+          <div class="glass"><small>Phone / WhatsApp</small>+91 00000 00000</div>
+          <div class="glass"><small>Founder &amp; CEO</small>Abishek</div>
+          <div class="glass"><small>Production partner</small>SAN Media Company, Thiruvananthapuram</div>
+          <p class="note">Sample contact details — replace with your real email and number.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="tag">Have a project in mind?</span><br>
+      <a class="big-cta" href="contact.html">Let's <b>talk</b> →</a>
+      <div class="foot">
+        <div>
+          <a class="brand" href="../index.html">
+            <img src="../assets/images/site/brand-mark.svg" width="38" height="21" alt="">
+            <span><small>The</small> Advantrix</span></a>
+          <p>Digital marketing, branding, video and AI for brands that want to lead.</p>
+        </div>
+        <div>
+          <h4>Pages</h4><a href="../index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a
+            href="production.html">Production</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Clients</h4><a href="https://starglasshouse.com/" target="_blank" rel="noopener">Star Glass House ↗</a><a
+            href="https://exoticalifespace.com/" target="_blank" rel="noopener">Exotica Lifespace ↗</a><a
+            href="https://www.creatovec.com/" target="_blank" rel="noopener">Creatov Engineering ↗</a><a
+            href="projects/fair.html">Fair Salon Spa</a><a href="projects/seaways.html">Confident Seaways</a>
+        </div>
+        <div>
+          <h4>Partner</h4><a href="https://sanmediacompany.in/" target="_blank" rel="noopener">SAN Media Company ↗</a><a
+            href="contact.html">hello@theadvantrix.com</a>
+        </div>
+      </div>
+      <div class="legal"><span>© 2026 The Advantrix. All rights reserved.</span><span>Production partner: SAN Media
+          Company</span></div>
+    </div>
+  </footer>
+
+  <div id="cur" aria-hidden="true">
+    <div class="ring"></div>
+    <div class="ico" id="curi"></div>
+    <div class="lbl" id="curl"></div>
+  </div>
+  <div class="hint" id="hint"><i id="hinti"></i>Click anywhere to switch the cursor</div>
+</body>
+
+</html>

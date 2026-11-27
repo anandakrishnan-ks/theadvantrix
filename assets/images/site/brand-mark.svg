@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-390 -216 780 432">
+  <defs>
+    <clipPath id="cL">
+      <polygon points="-384,212 -184,212 -30,-45 -130,-211" />
+    </clipPath>
+    <clipPath id="cF">
+      <polygon points="210,-211 385,-211 296,-63 121,-63" />
+    </clipPath>
+    <linearGradient id="gL" gradientUnits="userSpaceOnUse" x1="-130" y1="-211" x2="-183" y2="-179">
+      <stop offset="0" stop-color="#7a0010" stop-opacity=".9" />
+      <stop offset="1" stop-color="#7a0010" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="gF" gradientUnits="userSpaceOnUse" x1="40" y1="-211" x2="87" y2="-239">
+      <stop offset="0" stop-color="#7a0010" stop-opacity=".9" />
+      <stop offset="1" stop-color="#7a0010" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <polygon fill="#e0062a" points="-384,212 -184,212 -30,-45 -130,-211" />
+  <g clip-path="url(#cL)">
+    <rect x="-400" y="-260" width="800" height="520" fill="url(#gL)" />
+  </g>
+  <polygon fill="#e0062a" points="210,-211 385,-211 296,-63 121,-63" />
+  <g clip-path="url(#cF)">
+    <rect x="0" y="-260" width="400" height="260" fill="url(#gF)" />
+  </g>
+  <polygon fill="#e0062a" points="-130,-211 40,-211 294,212 124,212" />
+</svg>
