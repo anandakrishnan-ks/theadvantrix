@@ -1,0 +1,53 @@
+/* VOICE: calm anticipation, few words.
+   IDEA: a title card before the film starts — one screen, nothing else.
+   PICTURE: the glossy 3D Advantrix mark turning on liquid red, full-bleed.
+   COLOUR and TYPE: black, signal red #E0062A, white; Sora light + semibold, Inter.
+   LAYOUT: exactly one viewport at every size; logo, headline, countdown, sign-up. */
+:root{color-scheme:dark;--red:#e0062a;--red2:#ff3355;--mute:#a3a3ad;--disp:Sora,Inter,system-ui,sans-serif}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0;height:100%;overflow:hidden;background:#050506}
+body{color:#f4f4f5;font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.soon{position:relative;height:100vh;height:100dvh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:clamp(20px,5vh,56px) max(6vw,20px);isolation:isolate}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.soon::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,5,6,.9) 0%,rgba(5,5,6,.55) 50%,rgba(5,5,6,.1) 100%),linear-gradient(0deg,rgba(5,5,6,.6),transparent 40%)}
+.in{max-width:1280px;width:100%;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font:600 18px var(--disp);margin-bottom:clamp(18px,5vh,56px)}
+.brand svg{width:46px;height:26px;color:var(--red)}
+.brand small{font-weight:300;opacity:.75}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:#d0d0d6;margin-bottom:clamp(8px,2vh,20px)}
+.tag::before{content:"";width:28px;height:1px;background:var(--red)}
+h1{font:300 clamp(34px,min(7vw,9vh),96px)/1.04 var(--disp);letter-spacing:-.03em;margin:0;max-width:12ch;text-wrap:balance}
+h1 b{font-weight:600}
+.lead{margin:clamp(8px,2vh,20px) 0 0;font-size:clamp(15px,2.1vh,18px);color:#d6d6dc;max-width:46ch}
+.cd{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(6px,1.2vw,14px);max-width:620px;margin-top:clamp(14px,3.5vh,36px)}
+.cd div{border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.05);backdrop-filter:blur(12px);padding:clamp(8px,1.8vh,20px) 6px;text-align:center}
+.cd b{display:block;font:300 clamp(28px,min(6vw,7.5vh),64px)/1 var(--disp);font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.cd div:first-child b{color:var(--red2);font-weight:600}
+.cd span{display:block;margin-top:6px;font-size:clamp(11px,1.5vh,13px);color:var(--mute)}
+form{display:flex;gap:8px;max-width:620px;margin-top:clamp(12px,3vh,28px)}
+input{flex:1;font:16px Inter,system-ui,sans-serif;color:#fff;min-height:50px;border-radius:999px;padding:0 20px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px)}
+input:focus{outline:none;border-color:var(--red2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;border:1px solid transparent;font:500 15px Inter,system-ui,sans-serif;color:#fff;background:var(--red);transition:background .25s,transform .25s}
+.btn:hover{background:var(--red2);transform:translateY(-2px)}
+.btn.line{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.28);backdrop-filter:blur(8px)}.btn.line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn svg{width:16px;height:16px}
+:focus-visible{outline:2px solid var(--red2);outline-offset:3px}
+.msg{min-height:1.3em;font-size:14px;margin:6px 0 0;color:#bff5d6}
+.extra{margin-top:clamp(6px,2vh,22px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+dialog{border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:0;background:#000;width:min(1100px,94vw)}
+dialog::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(6px)}
+dialog video{display:block;width:100%;aspect-ratio:16/9}
+dialog button{position:absolute;top:10px;right:10px;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:#fff;font-size:20px}
+@media(max-aspect-ratio:1/1){.bg{object-position:74% 30%}}
+@media(max-width:560px){form{flex-direction:column}.soon{justify-content:flex-end}.soon::before{background:linear-gradient(0deg,rgba(5,5,6,.94) 25%,rgba(5,5,6,.5) 70%,rgba(5,5,6,.35))}.brand{position:absolute;top:22px;left:20px;margin:0}}
+@media(max-width:560px) and (max-height:700px){.lead{display:none}h1{font-size:30px}}
+@media(max-height:620px){.lead{display:none}.cd div{border-radius:12px}input,.btn{min-height:42px}.brand{margin-bottom:12px}}
+@media(max-height:440px){form,.msg{display:none}}
+/* cursor */
+.has-cur,.has-cur *{cursor:none!important}
+#cur{position:fixed;left:0;top:0;z-index:9999;pointer-events:none;display:none}.has-cur #cur{display:block}
+#cur .ring{position:absolute;left:-22px;top:-22px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.7);transition:transform .25s,background .25s,border-color .25s}
+#cur .ico{position:absolute;left:-11px;top:-11px;width:22px;height:22px;color:#fff}#cur .ico svg{width:22px;height:22px}
+#cur.hot .ring{transform:scale(1.6);background:rgba(224,6,42,.22);border-color:var(--red2)}#cur.down .ring{transform:scale(.8)}
+.spark{position:fixed;z-index:9998;pointer-events:none;width:18px;height:18px;color:var(--red2)}.spark svg{width:100%;height:100%}
