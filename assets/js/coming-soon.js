@@ -1,7 +1,7 @@
 {
 const $ = s => document.querySelector(s);
-/* countdown to a fixed launch time: 18 Dec 2026, 1:30 pm IST */
-const LAUNCH = new Date('2026-12-18T13:30:00+05:30').getTime();
+/* countdown to a fixed launch time: 8 Dec 2026, 2:30 pm IST */
+const LAUNCH = new Date('2026-12-08T14:30:00+05:30').getTime();
 const p = n => String(n).padStart(2,'0');
 const tick = () => { let t = Math.max(0, LAUNCH - Date.now()); const D = Math.floor(t/864e5); t -= D*864e5; const H = Math.floor(t/36e5); t -= H*36e5; const M = Math.floor(t/6e4); t -= M*6e4;
   $('#d').textContent = p(D); $('#h').textContent = p(H); $('#m').textContent = p(M); $('#s').textContent = p(Math.floor(t/1e3));
